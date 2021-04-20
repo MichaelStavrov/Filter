@@ -1,0 +1,56 @@
+.input {
+  position: relative;
+  width: 100%;
+  padding: 14px 35px 14px 14px;
+  border: 2px solid #009990;
+  height: 45px;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.input::placeholder {
+  color: #009990;
+}
+
+.iconArrow {
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.iconTransform {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.list {
+  position: absolute;
+  max-height: 250px;
+  min-width: 277px;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgb(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+
+.item {
+  padding: 15px 0 15px 10px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #eeeeee;
+}
+
+@media (max-width: 376px) {
+  .list {
+    z-index: 2;
+    max-width: 100%;
+  }
+}
