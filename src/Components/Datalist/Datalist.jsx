@@ -47,6 +47,11 @@ export function Datalist({
   }
 
   function handleInputChange(e) {
+<<<<<<< HEAD
+=======
+    setInFocus(true);
+    
+>>>>>>> dd09469 (initial commit)
     const { value, name } = e.target;
     setValue(value);
     if (name === "subject") {
